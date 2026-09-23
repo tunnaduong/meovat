@@ -29,3 +29,24 @@ Native mobile apps for the **Mẹo Vặt** ("Life Hacks") design in Figma:
 | Canvas secondary | `#F2F4F7` |
 | Radius | 12 (cards), 999 (pills) |
 | Fonts | Be Vietnam Pro (body), Inter SemiBold (48pt titles) |
+
+## App icon
+
+`design/app-icon.svg` is the master (light bulb + check on the brand orange). It is rasterised to
+`MeoVat/Assets.xcassets/AppIcon.appiconset/AppIcon.png` on `ios` and re-drawn as an adaptive icon
+(`res/drawable/ic_launcher_foreground.xml` + `ic_launcher_background.xml`) on `android`.
+
+## Build & run
+
+```bash
+# iOS (Xcode 16+, iOS 17 simulator)
+git checkout ios
+open MeoVat.xcodeproj        # or: xcodebuild -scheme MeoVat -destination 'platform=iOS Simulator,name=iPhone 17' build
+
+# Android (JDK 17, Android SDK 36)
+git checkout android
+./gradlew :app:installDebug  # needs a running emulator / device
+```
+
+Both apps bundle the same `seed.json` content (7 categories, 24 tips, 3 starter lists) and persist
+user state (saved lists, checklist ticks, settings) locally — there is no backend.
