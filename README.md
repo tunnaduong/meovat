@@ -7,6 +7,7 @@ Native mobile apps for the **Mẹo Vặt** ("Life Hacks") design in Figma:
 |-----------|----------|-------|
 | `ios`     | iOS 17+  | Swift 5, SwiftUI, Observation |
 | `android` | Android 8.0+ (API 26) | Kotlin, Jetpack Compose, Material 3 |
+| `backend` | Raspberry Pi (`100.102.160.98:8787`) | PHP 8.3, MySQL/MariaDB, nginx + php-fpm |
 
 `main` holds only the shared documentation and design references (`design/screens`).
 
@@ -48,5 +49,12 @@ git checkout android
 ./gradlew :app:installDebug  # needs a running emulator / device
 ```
 
-Both apps bundle the same `seed.json` content (7 categories, 24 tips, 3 starter lists) and persist
-user state (saved lists, checklist ticks, settings) locally — there is no backend.
+## Backend
+
+Both apps talk to the PHP API on the Raspberry Pi (`backend` branch, deployed at
+`/www/wwwroot/meovat-api`, served on port 8787 over Tailscale). There is no login: each install
+generates a UUID and sends it as `X-Device-Id`; the first request creates that device's user with
+the starter lists. The apps are offline-first — the bundled `seed.json` and the last synced state
+render immediately, the server's copy replaces them on launch / pull-to-refresh, and every change
+is applied locally then pushed in the background (an "offline" banner shows if the Pi is
+unreachable). The API base URL lives in `AppConfig` on both platforms.
