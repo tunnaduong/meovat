@@ -48,9 +48,7 @@ struct TipCard<Menu: View>: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            Image(tip.image)
-                .resizable()
-                .scaledToFill()
+            TipPhoto(url: tip.imageUrl, fallback: tip.image)
                 .frame(width: 64, height: 84)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
             VStack(alignment: .leading, spacing: 4) {

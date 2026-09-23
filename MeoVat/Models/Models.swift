@@ -11,6 +11,8 @@ struct TipStep: Codable, Hashable {
     let title: String
     let body: String
     let image: String?
+    /// Absolute URL from the API; nil for bundled seed content (falls back to the `image` asset).
+    let imageUrl: String?
 }
 
 struct Tip: Codable, Identifiable, Hashable {
@@ -24,6 +26,8 @@ struct Tip: Codable, Identifiable, Hashable {
     let hero: String
     let prep: [String]
     let steps: [TipStep]
+    let imageUrl: String?
+    let heroUrl: String?
 }
 
 struct SavedList: Codable, Identifiable, Hashable {
@@ -32,10 +36,11 @@ struct SavedList: Codable, Identifiable, Hashable {
     var name: String
     var description: String
     var tipIds: [String]
-    var createdAt: Date
+    /// Milliseconds since 1970, matching the API.
+    var createdAt: Double
 
-    init(id: String = UUID().uuidString, emoji: String?, name: String, description: String,
-         tipIds: [String] = [], createdAt: Date = .now) {
+    init(id: String = UUID().uuidString.lowercased(), emoji: String?, name: String, description: String,
+         tipIds: [String] = [], createdAt: Double = Date().timeIntervalSince1970 * 1000) {
         self.id = id
         self.emoji = emoji
         self.name = name
@@ -53,7 +58,7 @@ struct SavedList: Codable, Identifiable, Hashable {
         name = try c.decode(String.self, forKey: .name)
         description = try c.decodeIfPresent(String.self, forKey: .description) ?? ""
         tipIds = try c.decodeIfPresent([String].self, forKey: .tipIds) ?? []
-        createdAt = try c.decodeIfPresent(Date.self, forKey: .createdAt) ?? .now
+        createdAt = try c.decodeIfPresent(Double.self, forKey: .createdAt) ?? Date().timeIntervalSince1970 * 1000
     }
 }
 
@@ -92,6 +97,14 @@ struct AppSettings: Codable {
         language = try c.decodeIfPresent(AppLanguage.self, forKey: .language) ?? .vi
         sortOrder = try c.decodeIfPresent(SortOrder.self, forKey: .sortOrder) ?? .newest
     }
+}
+
+/// `GET /api/me`: everything a device needs on launch.
+struct MeResponse: Codable {
+    let deviceId: String
+    let lists: [SavedList]
+    let settings: AppSettings
+    let checklist: [String: [Int]]
 }
 
 struct SeedData: Codable {

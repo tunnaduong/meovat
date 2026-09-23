@@ -15,12 +15,9 @@ struct TipInfoView: View {
             ZStack(alignment: .topLeading) {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 24) {
-                        Image(tip.hero)
-                            .resizable()
-                            .scaledToFill()
+                        TipPhoto(url: tip.heroUrl, fallback: tip.hero)
                             .frame(maxWidth: .infinity)
                             .frame(height: heroHeight)
-                            .clipped()
                         summaryCard(tip, l)
                             .padding(.horizontal, 20)
                             .padding(.top, -88)

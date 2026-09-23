@@ -112,13 +112,10 @@ struct TipDetailView: View {
             .buttonStyle(.plain)
 
             if isOpen {
-                if let image = step.image {
-                    Image(image)
-                        .resizable()
-                        .scaledToFill()
+                if step.image != nil || step.imageUrl != nil {
+                    TipPhoto(url: step.imageUrl, fallback: step.image ?? "")
                         .frame(maxWidth: .infinity)
                         .frame(height: 260)
-                        .clipped()
                 }
                 Text(step.body)
                     .font(AppFont.textMD)

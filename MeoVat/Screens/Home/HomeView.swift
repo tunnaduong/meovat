@@ -20,6 +20,7 @@ struct HomeView: View {
                 .padding(.top, 20)
                 .padding(.bottom, 120)
             }
+            .refreshable { await store.refresh() }
         }
         .background(AppColor.canvas)
         .toolbar(.hidden, for: .navigationBar)

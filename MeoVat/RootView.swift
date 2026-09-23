@@ -17,6 +17,7 @@ enum SettingsRoute: Hashable {
 
 /// Three independent navigation stacks under a floating tab bar. The bar hides on full-bleed tip screens.
 struct RootView: View {
+    @Environment(AppStore.self) private var store
     @State private var tab: AppTab = .home
     @State private var homePath: [HomeRoute] = []
     @State private var savedPath: [SavedRoute] = []
@@ -73,6 +74,19 @@ struct RootView: View {
                     .transition(.move(edge: .bottom).combined(with: .opacity))
             }
         }
+        .overlay(alignment: .top) {
+            if store.syncError != nil {
+                Text(store.l10n.offline)
+                    .font(AppFont.textXSMedium)
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(AppColor.heading.opacity(0.85), in: Capsule())
+                    .padding(.top, 4)
+                    .transition(.move(edge: .top).combined(with: .opacity))
+            }
+        }
+        .animation(.snappy(duration: 0.25), value: store.syncError == nil)
         .animation(.snappy(duration: 0.25), value: tabBarHidden)
         .background(AppColor.canvas.ignoresSafeArea())
     }

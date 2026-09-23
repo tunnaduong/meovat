@@ -65,6 +65,7 @@ struct L10n {
           "Mẹo Vặt collects handy little tips for family, everyday life, the kitchen and more. Save your favourites into lists to revisit them any time.")
     }
     var version: String { t("Phiên bản", "Version") }
+    var offline: String { t("Không kết nối được máy chủ – đang dùng dữ liệu trên máy", "Can't reach the server – showing on-device data") }
 
     func languageName(_ l: AppLanguage) -> String {
         switch l {
