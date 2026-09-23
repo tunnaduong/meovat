@@ -2,7 +2,7 @@ import Foundation
 
 enum AppConfig {
     /// The Mẹo Vặt API on the Raspberry Pi (reachable over Tailscale).
-    /// Override on a simulator with: `xcrun simctl spawn booted defaults write com.tunnaduong.meovat api_base_url http://host:port`
+    /// Override on a simulator with: `xcrun simctl spawn booted defaults write com.fatties.meovat api_base_url http://host:port`
     static var apiBaseURL: URL {
         if let raw = UserDefaults.standard.string(forKey: "api_base_url"), let url = URL(string: raw) {
             return url
