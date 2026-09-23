@@ -1,0 +1,878 @@
+{
+ "categories": [
+  {
+   "id": "gia-dinh",
+   "emoji": "🧑‍🍼",
+   "name": "Gia đình",
+   "description": "Mẹo giúp gia đình hạnh phúc"
+  },
+  {
+   "id": "cuoc-song",
+   "emoji": "🌳",
+   "name": "Cuộc sống",
+   "description": "Giúp cuộc sống mỗi ngày dễ dàng"
+  },
+  {
+   "id": "tinh-yeu",
+   "emoji": "❤️",
+   "name": "Tình yêu",
+   "description": "Mẹo giúp cải thiện tình yêu"
+  },
+  {
+   "id": "an-uong",
+   "emoji": "🥣",
+   "name": "Ăn uống",
+   "description": "Bí quyết nấu ăn ngon và tiết kiệm"
+  },
+  {
+   "id": "bep-nuc",
+   "emoji": "🍳",
+   "name": "Bếp núc",
+   "description": "Mẹo hay cho việc bếp núc"
+  },
+  {
+   "id": "ao-quan",
+   "emoji": "🥼",
+   "name": "Áo quần",
+   "description": "Mẹo cho trang phục và ăn mặc"
+  },
+  {
+   "id": "di-chuyen",
+   "emoji": "🚗",
+   "name": "Di chuyển",
+   "description": "Mẹo cho việc đi lại và du lịch"
+  }
+ ],
+ "lists": [
+  {
+   "id": "xem-sau",
+   "emoji": "🗒️",
+   "name": "Xem sau",
+   "description": "Mẹo vặt lưu để xem sau",
+   "tipIds": [
+    "t-kem-danh-rang",
+    "t-ca-tre",
+    "t-hoa-lay-on",
+    "t-chay-day-noi",
+    "t-thong-tac-chau"
+   ]
+  },
+  {
+   "id": "gia-dinh",
+   "emoji": "🏥",
+   "name": "Gia đình",
+   "description": "Mẹo vặt giúp ích cho gia đình",
+   "tipIds": [
+    "t-meo-cuoc-song",
+    "t-thot-go",
+    "t-mui-tu-lanh"
+   ]
+  },
+  {
+   "id": "rua-xe",
+   "emoji": "🚗",
+   "name": "Rửa xe",
+   "description": "Mẹo vặt để rửa xe",
+   "tipIds": [
+    "t-rua-xe",
+    "t-say-xe"
+   ]
+  }
+ ],
+ "tips": [
+  {
+   "id": "t-kem-danh-rang",
+   "categoryId": "gia-dinh",
+   "tag": "Phân loại 1",
+   "title": "Đánh bay vết bẩn cứng đầu từ kem đánh răng",
+   "subtitle": "Kem nhỏ, sạch lớn, trắng bất ngờ",
+   "minutes": 25,
+   "image": "photo_toothbrush",
+   "hero": "photo_livingroom",
+   "prep": [
+    "Bàn chải đánh răng cán xanh",
+    "Khăn mặt mềm mại",
+    "Sữa rửa mặt dịu nhẹ",
+    "Nước tẩy trang Micellar",
+    "Kem dưỡng ẩm ban đêm",
+    "Serum phục hồi da"
+   ],
+   "steps": [
+    {
+     "title": "Chải nhẹ vào vết bẩn",
+     "body": "Nhẹ nhàng chải bàn chải mềm lên vết bẩn theo chuyển động tròn nhỏ. Thao tác này giúp loại bỏ cặn kem đánh răng mà không làm hỏng bề mặt.",
+     "image": "photo_step_brush"
+    },
+    {
+     "title": "Thêm dung dịch tẩy",
+     "body": "Nhỏ vài giọt nước tẩy trang Micellar lên khăn mềm rồi thấm đều lên vùng vừa chải để làm mềm phần cặn còn sót lại.",
+     "image": null
+    },
+    {
+     "title": "Lau sạch bằng khăn ẩm",
+     "body": "Dùng khăn mặt ẩm lau theo một chiều cho tới khi bề mặt không còn vệt trắng. Tránh chà mạnh để không làm xước.",
+     "image": null
+    },
+    {
+     "title": "Để khô tự nhiên",
+     "body": "Để bề mặt khô tự nhiên trong khoảng 10 phút, sau đó kiểm tra lại dưới ánh sáng và lặp lại nếu cần.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-ca-tre",
+   "categoryId": "gia-dinh",
+   "tag": "Phân loại 2",
+   "title": "Mẹo hay cho món cá trê",
+   "subtitle": "Mẹo nhỏ cho cuộc sống thêm tiện lợi",
+   "minutes": 30,
+   "image": "photo_burger",
+   "hero": "photo_burger",
+   "prep": [
+    "Cá trê tươi",
+    "Muối hạt",
+    "Giấm ăn",
+    "Gừng tươi"
+   ],
+   "steps": [
+    {
+     "title": "Khử nhớt bằng muối",
+     "body": "Xát muối hạt khắp thân cá rồi rửa lại bằng nước sạch để loại bỏ lớp nhớt và mùi tanh.",
+     "image": null
+    },
+    {
+     "title": "Ngâm giấm loãng",
+     "body": "Ngâm cá trong nước pha giấm khoảng 5 phút giúp thịt cá săn và thơm hơn.",
+     "image": null
+    },
+    {
+     "title": "Ướp với gừng",
+     "body": "Đập dập gừng, ướp cùng cá ít nhất 15 phút trước khi chế biến.",
+     "image": null
+    },
+    {
+     "title": "Chế biến ngay",
+     "body": "Nấu cá ngay sau khi ướp để giữ được độ ngọt tự nhiên của thịt.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-hoa-lay-on",
+   "categoryId": "gia-dinh",
+   "tag": "Phân loại 1",
+   "title": "Bí mật để cắm hoa lay ơn",
+   "subtitle": "Bí quyết đơn giản cho cuộc sống tươi mới",
+   "minutes": 15,
+   "image": "photo_drink",
+   "hero": "photo_drink",
+   "prep": [
+    "Hoa lay ơn tươi",
+    "Bình cắm cao",
+    "Kéo cắt cành",
+    "Viên aspirin"
+   ],
+   "steps": [
+    {
+     "title": "Cắt vát gốc",
+     "body": "Cắt vát gốc hoa một góc 45 độ dưới vòi nước để cành hút nước tốt hơn.",
+     "image": null
+    },
+    {
+     "title": "Tỉa lá dưới nước",
+     "body": "Bỏ hết lá nằm dưới mực nước để tránh thối rữa làm hỏng nước cắm.",
+     "image": null
+    },
+    {
+     "title": "Thêm aspirin",
+     "body": "Hoà tan nửa viên aspirin vào bình để giữ hoa tươi lâu hơn.",
+     "image": null
+    },
+    {
+     "title": "Thay nước mỗi 2 ngày",
+     "body": "Thay nước và cắt lại gốc mỗi hai ngày để hoa nở đều và bền.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-chay-day-noi",
+   "categoryId": "gia-dinh",
+   "tag": "Phân loại 3",
+   "title": "Cách loại bỏ vết cháy đáy nồi nhanh",
+   "subtitle": "Mẹo hay giúp bạn tiết kiệm thời gian",
+   "minutes": 20,
+   "image": "photo_bao",
+   "hero": "photo_bao",
+   "prep": [
+    "Baking soda",
+    "Giấm trắng",
+    "Miếng bọt biển",
+    "Nước nóng"
+   ],
+   "steps": [
+    {
+     "title": "Đổ nước và giấm",
+     "body": "Đổ nước ngập vết cháy, thêm một cốc giấm trắng rồi đun sôi khoảng 5 phút.",
+     "image": null
+    },
+    {
+     "title": "Rắc baking soda",
+     "body": "Tắt bếp, rắc 2 thìa baking soda và để bọt sủi làm mềm vết cháy.",
+     "image": null
+    },
+    {
+     "title": "Chà nhẹ",
+     "body": "Dùng bọt biển chà nhẹ theo vòng tròn, vết cháy sẽ bong ra dễ dàng.",
+     "image": null
+    },
+    {
+     "title": "Rửa lại",
+     "body": "Rửa sạch với nước ấm và lau khô để nồi sáng như mới.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-thong-tac-chau",
+   "categoryId": "gia-dinh",
+   "tag": "Phân loại 2",
+   "title": "Tuyệt chiêu thông tắc chậu rửa ngon lành",
+   "subtitle": "Gợi ý hữu ích cho mọi gia đình",
+   "minutes": 15,
+   "image": "photo_skewers",
+   "hero": "photo_skewers",
+   "prep": [
+    "Baking soda",
+    "Giấm ăn",
+    "Nước sôi",
+    "Khăn cũ"
+   ],
+   "steps": [
+    {
+     "title": "Đổ baking soda",
+     "body": "Đổ nửa cốc baking soda trực tiếp vào miệng cống thoát nước.",
+     "image": null
+    },
+    {
+     "title": "Thêm giấm",
+     "body": "Đổ tiếp một cốc giấm, bịt miệng cống bằng khăn cũ và chờ 10 phút.",
+     "image": null
+    },
+    {
+     "title": "Dội nước sôi",
+     "body": "Dội mạnh một ấm nước sôi để cuốn trôi cặn bẩn đã được làm mềm.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-meo-cuoc-song",
+   "categoryId": "gia-dinh",
+   "tag": "Phân loại 4",
+   "title": "Mẹo vặt cuộc sống bạn nên biết",
+   "subtitle": "Mẹo vặt cuộc sống bạn nên biết mỗi ngày",
+   "minutes": 10,
+   "image": "photo_pancakes",
+   "hero": "photo_pancakes",
+   "prep": [
+    "Hộp đựng nhỏ",
+    "Nhãn dán",
+    "Bút lông"
+   ],
+   "steps": [
+    {
+     "title": "Phân loại đồ dùng",
+     "body": "Chia đồ dùng nhỏ theo nhóm và cho vào từng hộp riêng.",
+     "image": null
+    },
+    {
+     "title": "Dán nhãn",
+     "body": "Ghi tên nhóm lên nhãn để cả nhà đều tìm thấy nhanh.",
+     "image": null
+    },
+    {
+     "title": "Sắp xếp theo tần suất",
+     "body": "Đặt những thứ dùng thường xuyên ở vị trí dễ lấy nhất.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-pin-dien-thoai",
+   "categoryId": "cuoc-song",
+   "tag": "Phân loại 1",
+   "title": "Kéo dài tuổi thọ pin điện thoại",
+   "subtitle": "Sạc đúng cách, pin bền gấp đôi",
+   "minutes": 5,
+   "image": "photo_drink",
+   "hero": "photo_drink",
+   "prep": [
+    "Điện thoại",
+    "Bộ sạc chính hãng"
+   ],
+   "steps": [
+    {
+     "title": "Giữ pin trong khoảng 20–80%",
+     "body": "Tránh để pin cạn hoàn toàn hoặc sạc đầy 100% quá thường xuyên.",
+     "image": null
+    },
+    {
+     "title": "Tắt sạc nhanh ban đêm",
+     "body": "Sạc chậm qua đêm giúp giảm nhiệt và bảo vệ pin.",
+     "image": null
+    },
+    {
+     "title": "Tránh nhiệt độ cao",
+     "body": "Không để máy dưới nắng hoặc trong xe nóng khi đang sạc.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-ngu-ngon",
+   "categoryId": "cuoc-song",
+   "tag": "Phân loại 2",
+   "title": "Ngủ ngon hơn chỉ với 3 thói quen",
+   "subtitle": "Thức dậy tỉnh táo mỗi sáng",
+   "minutes": 10,
+   "image": "photo_pancakes",
+   "hero": "photo_pancakes",
+   "prep": [
+    "Rèm tối màu",
+    "Đồng hồ báo thức"
+   ],
+   "steps": [
+    {
+     "title": "Cố định giờ ngủ",
+     "body": "Đi ngủ và thức dậy vào cùng một khung giờ, kể cả cuối tuần.",
+     "image": null
+    },
+    {
+     "title": "Tắt màn hình trước 30 phút",
+     "body": "Ánh sáng xanh làm chậm việc tiết melatonin, hãy đọc sách thay vì lướt điện thoại.",
+     "image": null
+    },
+    {
+     "title": "Giữ phòng tối và mát",
+     "body": "Nhiệt độ phòng khoảng 24 độ và rèm tối giúp ngủ sâu hơn.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-mui-giay",
+   "categoryId": "cuoc-song",
+   "tag": "Phân loại 1",
+   "title": "Khử mùi giày nhanh chóng",
+   "subtitle": "Giày thơm tho chỉ sau một đêm",
+   "minutes": 8,
+   "image": "photo_bao",
+   "hero": "photo_bao",
+   "prep": [
+    "Baking soda",
+    "Túi vải nhỏ",
+    "Vỏ cam khô"
+   ],
+   "steps": [
+    {
+     "title": "Rắc baking soda",
+     "body": "Rắc một ít baking soda vào trong giày và để qua đêm.",
+     "image": null
+    },
+    {
+     "title": "Đặt túi vỏ cam",
+     "body": "Cho vỏ cam khô vào túi vải rồi đặt trong giày để tạo mùi thơm tự nhiên.",
+     "image": null
+    },
+    {
+     "title": "Giũ sạch",
+     "body": "Sáng hôm sau giũ hết bột và phơi giày nơi thoáng gió.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-hen-ho",
+   "categoryId": "tinh-yeu",
+   "tag": "Phân loại 1",
+   "title": "Buổi hẹn hò tại nhà đáng nhớ",
+   "subtitle": "Không cần tốn kém vẫn lãng mạn",
+   "minutes": 45,
+   "image": "photo_drink",
+   "hero": "photo_drink",
+   "prep": [
+    "Nến thơm",
+    "Danh sách nhạc yêu thích",
+    "Nguyên liệu món tủ"
+   ],
+   "steps": [
+    {
+     "title": "Chuẩn bị không gian",
+     "body": "Dọn gọn bàn ăn, bật nến và nhạc nhẹ để tạo không khí ấm cúng.",
+     "image": null
+    },
+    {
+     "title": "Nấu cùng nhau",
+     "body": "Chọn một món đơn giản và cùng nhau vào bếp thay vì một người nấu.",
+     "image": null
+    },
+    {
+     "title": "Tắt điện thoại",
+     "body": "Dành trọn buổi tối cho nhau, không thông báo, không lướt mạng.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-lang-nghe",
+   "categoryId": "tinh-yeu",
+   "tag": "Phân loại 2",
+   "title": "Lắng nghe để hiểu nhau hơn",
+   "subtitle": "Ít cãi vã, nhiều thấu hiểu",
+   "minutes": 15,
+   "image": "photo_pancakes",
+   "hero": "photo_pancakes",
+   "prep": [
+    "Thời gian yên tĩnh",
+    "Sự kiên nhẫn"
+   ],
+   "steps": [
+    {
+     "title": "Không ngắt lời",
+     "body": "Để đối phương nói hết ý trước khi bạn phản hồi.",
+     "image": null
+    },
+    {
+     "title": "Nhắc lại ý chính",
+     "body": "Tóm tắt lại điều bạn nghe được để chắc rằng mình hiểu đúng.",
+     "image": null
+    },
+    {
+     "title": "Hỏi thay vì phán xét",
+     "body": "Đặt câu hỏi mở như “Anh/em cảm thấy thế nào?” thay vì kết luận vội.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-ky-niem",
+   "categoryId": "tinh-yeu",
+   "tag": "Phân loại 1",
+   "title": "Nhớ mọi ngày kỷ niệm",
+   "subtitle": "Không bao giờ quên ngày quan trọng",
+   "minutes": 5,
+   "image": "photo_burger",
+   "hero": "photo_burger",
+   "prep": [
+    "Điện thoại",
+    "Ứng dụng lịch"
+   ],
+   "steps": [
+    {
+     "title": "Tạo lịch chung",
+     "body": "Lập một lịch chia sẻ và thêm tất cả các ngày kỷ niệm.",
+     "image": null
+    },
+    {
+     "title": "Đặt nhắc trước 1 tuần",
+     "body": "Nhắc sớm để có thời gian chuẩn bị quà hoặc kế hoạch.",
+     "image": null
+    },
+    {
+     "title": "Ghi chú ý tưởng quà",
+     "body": "Ghi lại mỗi khi đối phương nhắc đến thứ họ thích.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-com-deo",
+   "categoryId": "an-uong",
+   "tag": "Phân loại 1",
+   "title": "Nấu cơm dẻo thơm như ngoài hàng",
+   "subtitle": "Bí quyết từ một giọt dầu",
+   "minutes": 30,
+   "image": "photo_pancakes",
+   "hero": "photo_pancakes",
+   "prep": [
+    "Gạo ngon",
+    "Dầu ăn",
+    "Nồi cơm điện"
+   ],
+   "steps": [
+    {
+     "title": "Vo gạo nhẹ tay",
+     "body": "Vo 2 lần nước, tránh chà mạnh làm mất lớp cám dinh dưỡng.",
+     "image": null
+    },
+    {
+     "title": "Ngâm 15 phút",
+     "body": "Ngâm gạo giúp hạt nở đều và chín mềm hơn.",
+     "image": null
+    },
+    {
+     "title": "Thêm vài giọt dầu",
+     "body": "Một chút dầu ăn giúp cơm bóng, tơi và không dính nồi.",
+     "image": null
+    },
+    {
+     "title": "Ủ thêm 10 phút",
+     "body": "Sau khi nồi chuyển chế độ giữ ấm, để yên 10 phút rồi mới xới.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-rau-xanh",
+   "categoryId": "an-uong",
+   "tag": "Phân loại 2",
+   "title": "Luộc rau xanh mướt không bị thâm",
+   "subtitle": "Rau xanh, giòn, giữ trọn vitamin",
+   "minutes": 10,
+   "image": "photo_drink",
+   "hero": "photo_drink",
+   "prep": [
+    "Rau tươi",
+    "Muối",
+    "Nước đá"
+   ],
+   "steps": [
+    {
+     "title": "Đun nước thật sôi",
+     "body": "Chỉ cho rau vào khi nước đã sôi mạnh, thêm một nhúm muối.",
+     "image": null
+    },
+    {
+     "title": "Không đậy nắp",
+     "body": "Mở nắp giúp rau giữ màu xanh tự nhiên.",
+     "image": null
+    },
+    {
+     "title": "Ngâm nước đá",
+     "body": "Vớt rau ra ngâm ngay vào nước đá để rau giòn và không thâm.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-thit-mem",
+   "categoryId": "an-uong",
+   "tag": "Phân loại 1",
+   "title": "Thịt bò mềm với mẹo ướp đơn giản",
+   "subtitle": "Ngon như nhà hàng",
+   "minutes": 20,
+   "image": "photo_burger",
+   "hero": "photo_burger",
+   "prep": [
+    "Thịt bò",
+    "Bột bắp",
+    "Dầu ăn",
+    "Nước tương"
+   ],
+   "steps": [
+    {
+     "title": "Thái ngang thớ",
+     "body": "Thái lát mỏng ngang thớ để thịt không bị dai.",
+     "image": null
+    },
+    {
+     "title": "Ướp bột bắp",
+     "body": "Trộn thịt với 1 thìa bột bắp và 1 thìa dầu ăn trong 15 phút.",
+     "image": null
+    },
+    {
+     "title": "Xào lửa lớn",
+     "body": "Xào nhanh trên lửa lớn, không đảo quá lâu.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-thot-go",
+   "categoryId": "bep-nuc",
+   "tag": "Phân loại 1",
+   "title": "Làm sạch thớt gỗ tự nhiên",
+   "subtitle": "Không hoá chất, sạch vi khuẩn",
+   "minutes": 10,
+   "image": "photo_bao",
+   "hero": "photo_bao",
+   "prep": [
+    "Chanh tươi",
+    "Muối hạt",
+    "Dầu ăn"
+   ],
+   "steps": [
+    {
+     "title": "Rắc muối lên thớt",
+     "body": "Phủ một lớp muối hạt lên toàn bộ mặt thớt.",
+     "image": null
+    },
+    {
+     "title": "Chà bằng nửa quả chanh",
+     "body": "Dùng nửa quả chanh chà theo vòng tròn để muối và axit làm sạch.",
+     "image": null
+    },
+    {
+     "title": "Lau khô và thoa dầu",
+     "body": "Rửa lại, lau khô rồi thoa lớp dầu mỏng để thớt không nứt.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-mui-tu-lanh",
+   "categoryId": "bep-nuc",
+   "tag": "Phân loại 2",
+   "title": "Khử mùi tủ lạnh hiệu quả",
+   "subtitle": "Tủ lạnh luôn thơm mát",
+   "minutes": 5,
+   "image": "photo_drink",
+   "hero": "photo_drink",
+   "prep": [
+    "Bã cà phê",
+    "Chén nhỏ"
+   ],
+   "steps": [
+    {
+     "title": "Phơi khô bã cà phê",
+     "body": "Trải bã cà phê ra khay và phơi khô hoàn toàn.",
+     "image": null
+    },
+    {
+     "title": "Đặt vào tủ lạnh",
+     "body": "Cho bã vào chén nhỏ và đặt ở ngăn giữa.",
+     "image": null
+    },
+    {
+     "title": "Thay mỗi tuần",
+     "body": "Thay bã mới mỗi tuần để duy trì hiệu quả khử mùi.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-dao-sac",
+   "categoryId": "bep-nuc",
+   "tag": "Phân loại 1",
+   "title": "Mài dao sắc bằng đáy chén sứ",
+   "subtitle": "Không cần đá mài",
+   "minutes": 5,
+   "image": "photo_skewers",
+   "hero": "photo_skewers",
+   "prep": [
+    "Chén sứ",
+    "Khăn khô"
+   ],
+   "steps": [
+    {
+     "title": "Lật úp chén",
+     "body": "Lật ngược chén, dùng phần đáy nhám không tráng men.",
+     "image": null
+    },
+    {
+     "title": "Mài nghiêng 20 độ",
+     "body": "Kéo lưỡi dao nghiêng khoảng 20 độ dọc theo vành đáy chén.",
+     "image": null
+    },
+    {
+     "title": "Lau sạch",
+     "body": "Lau lưỡi dao bằng khăn khô trước khi dùng.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-vet-dau-mo",
+   "categoryId": "ao-quan",
+   "tag": "Phân loại 1",
+   "title": "Tẩy vết dầu mỡ trên áo",
+   "subtitle": "Sạch ngay cả khi vết đã khô",
+   "minutes": 15,
+   "image": "photo_toothbrush",
+   "hero": "photo_toothbrush",
+   "prep": [
+    "Nước rửa chén",
+    "Bàn chải mềm",
+    "Nước ấm"
+   ],
+   "steps": [
+    {
+     "title": "Nhỏ nước rửa chén",
+     "body": "Nhỏ trực tiếp nước rửa chén lên vết dầu và để 5 phút.",
+     "image": null
+    },
+    {
+     "title": "Chà nhẹ",
+     "body": "Dùng bàn chải mềm chà nhẹ theo vòng tròn.",
+     "image": null
+    },
+    {
+     "title": "Giặt nước ấm",
+     "body": "Giặt lại với nước ấm như bình thường.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-ao-len",
+   "categoryId": "ao-quan",
+   "tag": "Phân loại 2",
+   "title": "Giữ áo len không bị xù",
+   "subtitle": "Áo len mới mãi",
+   "minutes": 10,
+   "image": "photo_pancakes",
+   "hero": "photo_pancakes",
+   "prep": [
+    "Dao cạo râu",
+    "Túi giặt",
+    "Nước giặt dịu nhẹ"
+   ],
+   "steps": [
+    {
+     "title": "Giặt trong túi lưới",
+     "body": "Lộn trái áo, cho vào túi giặt và chọn chế độ nhẹ.",
+     "image": null
+    },
+    {
+     "title": "Phơi nằm ngang",
+     "body": "Trải áo lên mặt phẳng để phơi, tránh treo làm giãn áo.",
+     "image": null
+    },
+    {
+     "title": "Cạo xù nhẹ",
+     "body": "Dùng dao cạo râu cạo nhẹ chỗ xù để áo mịn trở lại.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-gap-ao",
+   "categoryId": "ao-quan",
+   "tag": "Phân loại 1",
+   "title": "Gấp áo phông trong 2 giây",
+   "subtitle": "Tủ đồ gọn gàng tức thì",
+   "minutes": 2,
+   "image": "photo_burger",
+   "hero": "photo_burger",
+   "prep": [
+    "Áo phông",
+    "Mặt phẳng"
+   ],
+   "steps": [
+    {
+     "title": "Trải áo",
+     "body": "Trải áo phẳng, mặt trước hướng lên.",
+     "image": null
+    },
+    {
+     "title": "Véo hai điểm",
+     "body": "Véo điểm giữa vai và điểm giữa thân áo cùng phía.",
+     "image": null
+    },
+    {
+     "title": "Lật và gấp",
+     "body": "Đưa điểm vai xuống gấu áo, lật ra sau là xong.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-say-xe",
+   "categoryId": "di-chuyen",
+   "tag": "Phân loại 1",
+   "title": "Chống say xe không cần thuốc",
+   "subtitle": "Chuyến đi nhẹ nhàng",
+   "minutes": 5,
+   "image": "photo_drink",
+   "hero": "photo_drink",
+   "prep": [
+    "Gừng tươi",
+    "Vỏ cam",
+    "Khăn ướt"
+   ],
+   "steps": [
+    {
+     "title": "Ngậm lát gừng",
+     "body": "Ngậm một lát gừng mỏng trước khi khởi hành 15 phút.",
+     "image": null
+    },
+    {
+     "title": "Ngồi ghế trước",
+     "body": "Chọn ghế gần đầu xe và nhìn về phía xa.",
+     "image": null
+    },
+    {
+     "title": "Ngửi vỏ cam",
+     "body": "Mùi tinh dầu vỏ cam giúp giảm cảm giác buồn nôn.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-hanh-ly",
+   "categoryId": "di-chuyen",
+   "tag": "Phân loại 2",
+   "title": "Xếp hành lý gọn gấp đôi",
+   "subtitle": "Cuộn thay vì gấp",
+   "minutes": 20,
+   "image": "photo_bao",
+   "hero": "photo_bao",
+   "prep": [
+    "Vali",
+    "Túi zip",
+    "Dây buộc"
+   ],
+   "steps": [
+    {
+     "title": "Cuộn quần áo",
+     "body": "Cuộn chặt từng món thay vì gấp để tiết kiệm chỗ và ít nhăn.",
+     "image": null
+    },
+    {
+     "title": "Đồ nặng xuống dưới",
+     "body": "Xếp giày và đồ nặng gần bánh xe để vali cân bằng.",
+     "image": null
+    },
+    {
+     "title": "Dùng túi zip",
+     "body": "Chia đồ nhỏ theo nhóm trong túi zip để dễ tìm.",
+     "image": null
+    }
+   ]
+  },
+  {
+   "id": "t-rua-xe",
+   "categoryId": "di-chuyen",
+   "tag": "Phân loại 1",
+   "title": "Rửa xe tại nhà sáng bóng",
+   "subtitle": "Tiết kiệm tiền, xe vẫn bóng",
+   "minutes": 40,
+   "image": "photo_skewers",
+   "hero": "photo_skewers",
+   "prep": [
+    "Xô nước",
+    "Khăn microfiber",
+    "Dung dịch rửa xe"
+   ],
+   "steps": [
+    {
+     "title": "Xịt nước làm mềm bụi",
+     "body": "Xịt ướt toàn bộ xe trước để bụi cát không làm xước sơn khi lau.",
+     "image": null
+    },
+    {
+     "title": "Rửa từ trên xuống",
+     "body": "Lau từ nóc xuống thân, đổi khăn khi khăn bẩn.",
+     "image": null
+    },
+    {
+     "title": "Lau khô ngay",
+     "body": "Dùng khăn microfiber lau khô để tránh vết nước đọng.",
+     "image": null
+    }
+   ]
+  }
+ ]
+}
