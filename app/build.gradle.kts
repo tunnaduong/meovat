@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tunnaduong.meovat"
+    namespace = "com.fatties.meovat"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.tunnaduong.meovat"
+        applicationId = "com.fatties.meovat"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
