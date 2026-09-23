@@ -49,6 +49,7 @@ import com.tunnaduong.meovat.data.TipStep
 import com.tunnaduong.meovat.ui.AppViewModel
 import com.tunnaduong.meovat.ui.components.AppIcon
 import com.tunnaduong.meovat.ui.components.IconCircleButton
+import com.tunnaduong.meovat.ui.components.TipPhoto
 import com.tunnaduong.meovat.ui.theme.AppColor
 import com.tunnaduong.meovat.ui.theme.AppType
 
@@ -144,13 +145,8 @@ private fun StepSection(index: Int, step: TipStep, isOpen: Boolean, onToggle: ()
         }
         AnimatedVisibility(visible = isOpen, enter = expandVertically(), exit = shrinkVertically()) {
             Column {
-                step.image?.let { image ->
-                    Image(
-                        painter = painterResource(Photos.id(image)),
-                        contentDescription = null,
-                        contentScale = ContentScale.Crop,
-                        modifier = Modifier.fillMaxWidth().height(260.dp),
-                    )
+                if (step.image != null || step.imageUrl != null) {
+                    TipPhoto(url = step.imageUrl, fallback = step.image, modifier = Modifier.fillMaxWidth().height(260.dp))
                 }
                 Text(step.body, style = AppType.textMD.copy(lineHeight = AppType.textMD.lineHeight * 1.15f), color = AppColor.Body, modifier = Modifier.padding(20.dp))
             }

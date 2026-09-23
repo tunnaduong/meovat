@@ -4,7 +4,8 @@ import java.util.UUID
 
 data class TipCategory(val id: String, val emoji: String, val name: String, val description: String)
 
-data class TipStep(val title: String, val body: String, val image: String?)
+/** [imageUrl] comes from the API; bundled seed content only has the [image] asset name. */
+data class TipStep(val title: String, val body: String, val image: String?, val imageUrl: String? = null)
 
 data class Tip(
     val id: String,
@@ -17,6 +18,8 @@ data class Tip(
     val hero: String,
     val prep: List<String>,
     val steps: List<TipStep>,
+    val imageUrl: String? = null,
+    val heroUrl: String? = null,
 )
 
 data class SavedList(
@@ -52,11 +55,18 @@ data class AppSettings(
 
 data class SeedData(val categories: List<TipCategory>, val lists: List<SavedList>, val tips: List<Tip>)
 
-/** Everything the user can change; persisted as JSON by [StateStorage]. */
+/** Everything the UI renders: content (from the API, cached) plus the user's own state. */
 data class AppState(
+    val categories: List<TipCategory> = emptyList(),
+    val tips: List<Tip> = emptyList(),
     val lists: List<SavedList> = emptyList(),
     val settings: AppSettings = AppSettings(),
     val checkedPrep: Map<String, Set<Int>> = emptyMap(),
+    val isSyncing: Boolean = false,
+    val syncError: String? = null,
 ) {
     val l10n: L10n get() = L10n(settings.language)
 }
+
+/** `GET /api/me`: everything a device needs on launch. */
+data class MeResponse(val lists: List<SavedList>, val settings: AppSettings, val checklist: Map<String, Set<Int>>)

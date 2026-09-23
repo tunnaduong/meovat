@@ -90,10 +90,9 @@ fun TipCard(tip: Tip, onClick: () -> Unit, actions: List<MenuAction>, modifier: 
             .height(96.dp)
             .padding(start = 6.dp, top = 6.dp, bottom = 6.dp, end = 10.dp),
     ) {
-        Image(
-            painter = painterResource(Photos.id(tip.image)),
-            contentDescription = null,
-            contentScale = ContentScale.Crop,
+        TipPhoto(
+            url = tip.imageUrl,
+            fallback = tip.image,
             modifier = Modifier
                 .size(width = 64.dp, height = 84.dp)
                 .clip(RoundedCornerShape(8.dp)),

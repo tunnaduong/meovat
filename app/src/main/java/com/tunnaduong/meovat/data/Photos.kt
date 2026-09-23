@@ -18,4 +18,7 @@ object Photos {
 
     @DrawableRes
     fun id(name: String): Int = byName[name] ?: R.drawable.photo_pancakes
+
+    @DrawableRes
+    fun idOrNull(name: String): Int? = byName[name]
 }

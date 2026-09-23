@@ -13,6 +13,13 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Text
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
+import com.tunnaduong.meovat.ui.theme.AppType
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -109,6 +116,22 @@ fun RootScreen(vm: AppViewModel = viewModel()) {
                 composable("settings/language") { LanguageScreen(vm, state, onBack = { navController.popBackStack() }) }
                 composable("settings/about") { AboutScreen(state, onBack = { navController.popBackStack() }) }
             }
+        }
+
+        AnimatedVisibility(
+            visible = state.syncError != null,
+            modifier = Modifier.align(Alignment.TopCenter).statusBarsPadding().padding(top = 4.dp),
+            enter = slideInVertically(tween(250)) { -it } + fadeIn(tween(250)),
+            exit = slideOutVertically(tween(250)) { -it } + fadeOut(tween(250)),
+        ) {
+            Text(
+                state.l10n.offline,
+                style = AppType.textXSMedium,
+                color = Color.White,
+                modifier = Modifier
+                    .background(AppColor.Heading.copy(alpha = 0.85f), CircleShape)
+                    .padding(horizontal = 12.dp, vertical = 6.dp),
+            )
         }
 
         AnimatedVisibility(

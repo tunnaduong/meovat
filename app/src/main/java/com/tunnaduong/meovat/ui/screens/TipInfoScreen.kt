@@ -33,6 +33,7 @@ import com.tunnaduong.meovat.ui.components.CheckRow
 import com.tunnaduong.meovat.ui.components.IconCircleButton
 import com.tunnaduong.meovat.ui.components.PrimaryButton
 import com.tunnaduong.meovat.ui.components.TagBadge
+import com.tunnaduong.meovat.ui.components.TipPhoto
 import com.tunnaduong.meovat.ui.components.card
 import com.tunnaduong.meovat.ui.theme.AppColor
 import com.tunnaduong.meovat.ui.theme.AppType
@@ -48,12 +49,7 @@ fun TipInfoScreen(tipId: String, vm: AppViewModel, state: AppState, onBack: () -
 
     Box(Modifier.fillMaxSize().background(AppColor.Canvas)) {
         Box(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-            Image(
-                painter = painterResource(Photos.id(tip.hero)),
-                contentDescription = null,
-                contentScale = ContentScale.Crop,
-                modifier = Modifier.fillMaxWidth().height(HeroHeight),
-            )
+            TipPhoto(url = tip.heroUrl, fallback = tip.hero, modifier = Modifier.fillMaxWidth().height(HeroHeight))
             Column(
                 verticalArrangement = Arrangement.spacedBy(24.dp),
                 modifier = Modifier

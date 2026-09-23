@@ -65,6 +65,7 @@ class L10n(private val language: AppLanguage) {
         "Mẹo Vặt collects handy little tips for family, everyday life, the kitchen and more. Save your favourites into lists to revisit them any time.",
     )
     val version get() = t("Phiên bản", "Version")
+    val offline get() = t("Không kết nối được máy chủ – đang dùng dữ liệu trên máy", "Can't reach the server – showing on-device data")
 
     fun languageName(l: AppLanguage) = when (l) {
         AppLanguage.VI -> t("Tiếng Việt", "Vietnamese")
